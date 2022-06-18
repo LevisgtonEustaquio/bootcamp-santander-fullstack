@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align-content</title>
+    <style>
+        .container{
+            height: 350px;
+            max-width: 300px;
+            margin: 2;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+
+        .item{
+            background-color: saddlebrown;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+            border: 1px solid black;
+        }
+        
+        .stretch{
+            align-content: stretch;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+        .start{
+            align-content: flex-start;
+        }
+
+        .end{
+            align-content: flex-end;
+        }
+
+        .space-around{
+            align-content: space-around;
+        }
+
+        .space-between{
+            align-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <p>Stretch</p>
+    <div class="container stretch">
+        <div class="item">Evidentemente, a consolidação</div>
+        <div class="item">Evidentemente</div>
+        <div class="item">níveis de motivação</div>
+        <div class="item">Evidentemente, a c</div>
+        <div class="item">dos níveis de motivação departamental.</div>
+        <div class="item">consequências dos níveis de motivação departamental.</div>
+        <div class="item">estruturas é uma das consequências dos níveis de motivação departamental.</div>
+    </div>
+
+    <p>Center</p>
+    <div class="container center">
+        <div class="item">Evidentemente, a consolidação</div>
+        <div class="item">Evidentemente</div>
+        <div class="item">níveis de motivação</div>
+        <div class="item">Evidentemente, a consolidação das estruturas é uma das consequências dos níveis de motivação departamental.</div>
+        <div class="item">dos níveis de motivação departamental.</div>
+        <div class="item">consequências dos níveis de motivação departamental.</div>
+        <div class="item">estruturas é uma das consequências dos níveis de motivação departamental.</div>
+    </div>
+
+    <p>Flex-start</p>
+    <div class="container start">
+        <div class="item">Evidentemente, a consolidação</div>
+        <div class="item">Evidentemente</div>
+        <div class="item">níveis de motivação</div>
+        <div class="item">Evidentemente, a consolidação das estruturas é uma das consequências dos níveis de motivação departamental.</div>
+        <div class="item">dos níveis de motivação departamental.</div>
+        <div class="item">consequências dos níveis de motivação departamental.</div>
+        <div class="item">estruturas é uma das consequências dos níveis de motivação departamental.</div>
+    </div>
+
+    <p>Flex-end</p>
+    <div class="container end">
+        <div class="item">Evidentemente, a consolidação</div>
+        <div class="item">Evidentemente</div>
+        <div class="item">níveis de motivação</div>
+        <div class="item">Evidentemente, a consolidação das estruturas é uma das consequências dos níveis de motivação departamental.</div>
+        <div class="item">dos níveis de motivação departamental.</div>
+        <div class="item">consequências dos níveis de motivação departamental.</div>
+        <div class="item">estruturas é uma das consequências dos níveis de motivação departamental.</div>
+    </div>
+
+    <p>Space around</p>
+    <div class="container space-around">
+        <div class="item">Evidentemente, a consolidação</div>
+        <div class="item">Evidentemente</div>
+        <div class="item">níveis de motivação</div>
+        <div class="item">Evidentemente, a consolidação das estruturas é uma das consequências dos níveis de motivação departamental.</div>
+        <div class="item">dos níveis de motivação departamental.</div>
+        <div class="item">consequências dos níveis de motivação departamental.</div>
+        <div class="item">estruturas é uma das consequências dos níveis de motivação departamental.</div>
+    </div>
+
+    <p>Space-between</p>
+    <div class="container Space-between">
+        <div class="item">Evidentemente, a consolidação</div>
+        <div class="item">Evidentemente</div>
+        <div class="item">níveis de motivação</div>
+        <div class="item">Evidentemente, a consoli.</div>
+        <div class="item">dos níveis de motivação departamental.</div>
+        <div class="item">consequências dos níveis de motivação departamental.</div>
+        <div class="item">estruturas é uma das consequências dos níveis de motivação departamental.</div>
+    </div>
+</body>
+</html>
